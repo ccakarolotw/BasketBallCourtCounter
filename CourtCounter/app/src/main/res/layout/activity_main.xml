@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="10"
+       android:orientation="vertical"
+       >
+
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:text="Team"
+           android:textSize="15sp"
+           />
+           <TextView
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Dragon"
+               android:textColor="@android:color/holo_red_light"
+               android:textSize="22sp"/>
+       <TextView
+           android:id="@+id/team_a_score"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:gravity="center"
+           android:text="0"
+           android:textSize="50sp"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20dp"
+           android:layout_marginTop="5dp"
+           android:gravity="center"
+           android:text="score"/>
+
+
+       <Button
+           android:id="@+id/plus3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:background="#2f13f8"
+           android:onClick="addThree"
+           android:padding="5dp"
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp"
+           android:text="+3 points"
+           />
+
+       <Button
+       android:id="@+id/plus2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:background="#075deb"
+           android:onClick="addTwo"
+           android:padding="5dp"
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp"
+           android:text="+2 points"
+           />
+
+       <Button
+           android:id="@+id/plus1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:background="#06b9d2"
+           android:onClick="addOne"
+           android:padding="5dp"
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp"
+           android:text="+1 point"
+           />
+   </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="320dp"
+            android:layout_marginTop="30dp"
+            android:background="#c0c0c0"/>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Team"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Cat"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="22sp"
+                />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="50sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="score"/>
+
+            <Button
+                android:id="@+id/bplus3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#2f13f8"
+                android:onClick="baddThree"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="+3 points"
+                />
+
+            <Button
+            android:id="@+id/bplus2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#075deb"
+            android:onClick="baddTwo"
+            android:padding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="+2 points"
+            />
+
+
+            <Button
+                android:id="@+id/bplus1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#06b9d2"
+                android:onClick="baddOne"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="+1 point"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:onClick="setZero"
+        android:text="Reset"/>
+
+</RelativeLayout>
